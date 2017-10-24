@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="class="grid-1_25-1_65-1_10" onload="plusDivs(0)"">
+    <section>
+
+      {% include header.html %}
+      
+      <main class="main" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+
+      {% include footer.html %}
+
+    </section>
+
+  </body>
+
+</html>
